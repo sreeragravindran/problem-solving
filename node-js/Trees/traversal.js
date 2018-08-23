@@ -1,9 +1,13 @@
 var Stack = require("stackjs");
 
-function Node(data, left, right){
+function Node(data, left = null, right = null){
     this.data = data;
     this.left = left;
     this.right = right; 
+
+    this.isLeaf = function(){
+        return this.left == null && this.right == null;
+    }
 }
 
 // create tree 
@@ -26,7 +30,7 @@ n3.right = n7;
 
 // traverse witout recursion 
 
-function traverseWithoutRecursion(){
+function preOrderWithoutRecursion(){
     var root = n1;
     var stack = new Stack();
     var traversal = "";
@@ -50,5 +54,19 @@ function traverseWithoutRecursion(){
     return traversal;
 }
 
+function postOrderWithoutRecursion(){
+    var stack = new Stack();
+    var root = n1;
+    var traversal = "";
 
-console.log(traverseWithoutRecursion());
+    while(root){
+        if(root.isLeaf()) {
+            traversal = traversal.concat(root.data).concat(" -> ");        
+        }
+        //stack.push({ "data" : root.left.data, "count" })            
+    }    
+    
+}
+
+
+console.log(preOrderWithoutRecursion());

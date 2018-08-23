@@ -7,9 +7,8 @@ function Node(data, left=null, right=null){
     this.right = right;
 }
 
-
-function Tree(){
-    var root = null; 
+function Tree(rootNode){
+    var root = rootNode ? rootNode : null; 
     var queue = new Queue();
 
     this.getRoot = function(){
@@ -67,7 +66,7 @@ function Tree(){
 
 
 function deserialize(string){
-    var array = string.split("");
+    var array = string.split("[!]");
     var tree = new Tree();
     array.forEach(element => {
         // insert into the tree 
@@ -76,20 +75,22 @@ function deserialize(string){
         tree.addItem(new Node(element));
     });
 
-    return tree;
+    return tree.getRoot();
 }
-
 
 function serialise(tree){
     var array = tree.getDataInLevelOrder();
+    //console.log(array);
     var result = "";
     array.forEach(element => {
         //console.log(element.data);
-        result = result.concat(element.data);
+        result = result.concat(element.data).concat("[!]");
     })
     return result;
 }
 
-var tree = deserialize("hello world");
-var result = serialise(tree);
-console.log(result);
+
+// test
+var rootNode = new Node('root', new Node('left', new Node('left.left')), new Node('right'));
+var tree = new Tree(rootNode);
+console.log(deserialize(serialise(tree)).left.left.data);

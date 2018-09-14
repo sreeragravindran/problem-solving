@@ -12,7 +12,7 @@
         // sort the array 
         array.sort(function(a, b){return a - b}); // sort in ascending order 
 
-        console.log(array);
+        //console.log(array);
         for (var i = 0; i < array.length - 2; i++) {
             var left = i + 1;
             var right = array.length - 1;
@@ -38,6 +38,7 @@
  }
 
 
-var result = exists([10, 15, 3, 7, 5, 10, 8, 9, 1], 35);
+//var result = exists([10, 15, 3, 7, 5, 10, 8, 9, 1], 35);
+//console.log(result);
 
-console.log(result);
+module.exports = exists;

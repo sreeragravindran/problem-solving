@@ -3,7 +3,7 @@
      For example, given [10, 15, 3, 7] and k of 17, return true since 10 + 7 is 17.
  */ 
 
- function exists(inputArray, sum){ 
+ function func(inputArray, sum){ 
 
      var map = new Map();
      var temp = 0; 
@@ -23,6 +23,8 @@
  }
 
 
-var result = exists([10, 11, 3, -2], 9);
+// var result = exists([10, 11, 3, -2], 9);
 
-console.log(result);
+// console.log(result);
+
+module.exports = func;

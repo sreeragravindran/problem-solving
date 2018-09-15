@@ -1,7 +1,7 @@
 var expect = require('chai').expect; 
 var func = require('../../src/arrays/sum-of-two-elements-equals-given-sum');
 
-describe("sum of three elements in the array equals the given sum", function(){
+describe("sum of any three elements in the array equals the given sum", function(){
     it('array:[10, 15, 3, 7], sum: 17 should return true', function(){
         expect( func( [10, 15, 3, 7], 17 ) ).to.equal(true);
     })

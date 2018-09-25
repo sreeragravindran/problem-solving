@@ -10,7 +10,7 @@ Follow-up: what if you can't use division?
 
 */ 
 
-function func(array){
+function getArrayWithProductOfAllOtherNumbers(array){
 
     if(array.length < 3){
         return array;
@@ -42,4 +42,4 @@ function getLeftSideProducts(array){
 }
 
 
-module.exports = func;
+module.exports = getArrayWithProductOfAllOtherNumbers;

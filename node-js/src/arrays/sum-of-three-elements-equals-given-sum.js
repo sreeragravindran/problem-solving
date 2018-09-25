@@ -3,7 +3,7 @@
      For example, given [10, 15, 3, 7, 5, 10, 8, 9, 1] and k of 9, return true since 3 + 5 + 1 is 9.
  */ 
 
- function exists(array, sum){ 
+ function sumOfAnyThreeElementsEqualsTheGivenSum(array, sum){ 
 
         if(array.length < 3){
             return false;
@@ -41,4 +41,4 @@
 //var result = exists([10, 15, 3, 7, 5, 10, 8, 9, 1], 35);
 //console.log(result);
 
-module.exports = exists;
+module.exports = sumOfAnyThreeElementsEqualsTheGivenSum;

@@ -12,7 +12,7 @@ i.e input : tactcoa
 */
 
 
-package problemsolving.Strings;
+package ProblemSolving.Strings;
 
 import java.util.HashSet;
 import java.util.Set;

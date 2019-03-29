@@ -1,8 +1,7 @@
-package problemsolving.arrays;
+package ProblemSolving.arrays;
 
 import java.util.*;
 import com.google.common.base.Preconditions;
-import com.sun.xml.internal.xsom.impl.scd.Iterators;
 
 
 /*

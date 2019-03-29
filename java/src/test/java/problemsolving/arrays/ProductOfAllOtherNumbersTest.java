@@ -1,4 +1,4 @@
-package problemsolving.arrays;
+package ProblemSolving.arrays;
 
 import junit.framework.Assert;
 import org.junit.Test;

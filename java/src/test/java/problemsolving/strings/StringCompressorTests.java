@@ -1,8 +1,8 @@
-package problemsolving.strings;
+package ProblemSolving.strings;
 
 import org.junit.Assert;
 import org.junit.Test;
-import problemsolving.Strings.StringCompressor;
+import ProblemSolving.Strings.StringCompressor;
 
 public class StringCompressorTests {
 

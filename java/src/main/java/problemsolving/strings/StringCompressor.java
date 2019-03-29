@@ -1,4 +1,4 @@
-package problemsolving.Strings;
+package ProblemSolving.Strings;
 
 /*
 

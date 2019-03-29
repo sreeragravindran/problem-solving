@@ -1,4 +1,4 @@
-package problemsolving.arrays;
+package ProblemSolving.arrays;
 
 import com.google.common.base.Preconditions;
 

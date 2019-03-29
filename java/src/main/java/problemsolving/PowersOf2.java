@@ -1,4 +1,4 @@
-package problemsolving;
+package ProblemSolving;
 
 public class PowersOf2 {
 

@@ -1,4 +1,4 @@
-package problemsolving.arrays.LastNLogs;
+package ProblemSolving.arrays.LastNLogs;
 
 
 /*

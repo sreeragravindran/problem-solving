@@ -1,5 +1,7 @@
 package Threading.Messaging;
 
+import Threading.Messaging.Buffer.Buffer;
+
 import java.security.SecureRandom;
 
 public class Consumer implements  Runnable{
@@ -19,10 +21,11 @@ public class Consumer implements  Runnable{
             {
                 Thread.sleep(generator.nextInt(3000));
                 sum  += sharedLocation.get();
-                System.out.printf("\t\t\t%2d%n",sum);
+                //System.out.printf("\t\t\t%2d%n",sum);
             }
             catch (InterruptedException ex)
             {
+                System.out.printf("%S%n", "Consumer was interrupted ");
                 Thread.currentThread().interrupt();
             }
         }

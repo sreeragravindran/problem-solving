@@ -1,5 +1,7 @@
 package Threading.Messaging;
 
+import Threading.Messaging.Buffer.Buffer;
+
 import java.security.SecureRandom;
 
 public class Producer implements Runnable {
@@ -23,10 +25,11 @@ public class Producer implements Runnable {
                 Thread.sleep(generator.nextInt(3000));
                 sharedLocation.put(count);
                 sum = sum + count;
-                System.out.printf("\t%2d%n", sum);
+                //System.out.printf("\t%2d%n", sum);
             }
             catch(InterruptedException ex)
             {
+                System.out.printf("%S%n", "Producer was interrupted ");
                 Thread.currentThread().interrupt();
             }
         }

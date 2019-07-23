@@ -1,6 +1,7 @@
 package ProblemSolving.strings.WordWrap;
 
 
+import com.intellij.vcs.log.ui.frame.WrappedFlowLayout;
 import com.twelvemonkeys.lang.StringUtil;
 import org.apache.commons.lang3.StringUtils;
 
@@ -42,6 +43,8 @@ public class TextWrapper {
 
         return wrappedText;
     }
+
+    //private WrappedText WrapText
 
     private boolean canBreakLineWithCharacter(char c){
         if(c == ' ' || c == '\t') {

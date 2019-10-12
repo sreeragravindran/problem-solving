@@ -30,6 +30,15 @@ function nonRepeatedElementInTheArray(){
 
 nonRepeatedElementInTheArray();
 
+function isUniqueCharacters(str){
+    var checker = 0;
+    
+    for(var i = 0; i < str.length ; i++){
+        var val = str[i] - 'a';
+    }
+}
 
 
-// fir
+var str = "hello";
+console.log
+

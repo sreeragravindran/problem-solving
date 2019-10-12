@@ -40,4 +40,10 @@ public class ListTest {
 
         Assert.assertTrue(Optional.of(firstList).equals(Optional.of(secondList)));
     }
+
+    @Test
+    public void empty_optional_objects_are_equal(){
+
+        Assert.assertTrue(Optional.empty().equals(Optional.empty()));
+    }
 }

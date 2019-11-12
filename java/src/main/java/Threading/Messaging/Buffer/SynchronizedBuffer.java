@@ -1,7 +1,5 @@
 package Threading.Messaging.Buffer;
 
-import Threading.Messaging.Buffer.Buffer;
-
 public class SynchronizedBuffer implements Buffer {
 
     private int buffer = -1;

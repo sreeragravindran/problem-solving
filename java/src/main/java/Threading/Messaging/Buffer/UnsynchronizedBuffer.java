@@ -1,7 +1,5 @@
 package Threading.Messaging.Buffer;
 
-import Threading.Messaging.Buffer.Buffer;
-
 /*
 
 UnsynchronizedBuffer maintains a shared buffer accessed by both Producer and Consumer

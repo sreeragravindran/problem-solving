@@ -2,7 +2,6 @@ package Threading.Messaging;
 
 import Threading.Messaging.Buffer.Buffer;
 import Threading.Messaging.Buffer.CustomSychronizedBuffer;
-import Threading.Messaging.Buffer.SynchronizedBuffer;
 
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;

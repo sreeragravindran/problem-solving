@@ -1,9 +1,6 @@
 package ProblemSolving.graphs;
 
-import java.util.HashMap;
-import java.util.HashSet;
-import java.util.Set;
-import java.util.LinkedList;
+import java.util.*;
 
 public class Graph {
 
@@ -32,14 +29,14 @@ public class Graph {
         return this;
     }
 
-    public boolean hasPathDFS(int source, int destination) {
+    public boolean hasDFSPath(int source, int destination) {
         Node sourceNode = getNode(source);
         Node destinationNode = getNode(destination);
         Set<Integer> visited = new HashSet<>();
-        return hasPathDFS(sourceNode, destinationNode, visited);
+        return hasDFSPath(sourceNode, destinationNode, visited);
     }
 
-    private boolean hasPathDFS(Node source, Node destination, Set<Integer> visited) {
+    private boolean hasDFSPath(Node source, Node destination, Set<Integer> visited) {
 
         if(visited.contains(source.id)){
             return false;
@@ -56,9 +53,44 @@ public class Graph {
         visited.add(source.id);
 
         for(Node child: source.adjacents){
-            if(hasPathDFS(child, destination, visited)){
+            if(hasDFSPath(child, destination, visited)){
                 return true;
             }
+        }
+
+        return false;
+    }
+
+    public boolean hasBFSPath(int source, int destinaion){
+        Node sourceNode = getNode(source);
+        Node destinationNode = getNode(destinaion);
+        return hasBFSPath(sourceNode, destinationNode);
+    }
+
+    private boolean hasBFSPath(Node source, Node destination){
+
+        LinkedList<Node> queue = new LinkedList<>();
+        Set<Integer> visited = new HashSet<>();
+        queue.add(source);
+
+        while(!queue.isEmpty()) {
+            queue.forEach(e -> System.out.println(e.id));
+
+//            System.out.println("end of queue");
+
+            Node temp = queue.remove();
+
+            if(visited.contains(temp.id)){
+                continue;
+            }
+
+            if(temp == destination) {
+                return true;
+            }
+
+            visited.add(temp.id);
+
+            queue.addAll(temp.adjacents);
         }
 
         return false;

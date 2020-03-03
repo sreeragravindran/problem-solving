@@ -1,5 +1,9 @@
 package ProblemSolving;
 
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+
 public class PowersOf2 {
 
     private int n;
@@ -8,6 +12,9 @@ public class PowersOf2 {
     public PowersOf2(int until){
         n = until;
         base = 2;
+
+        List<Integer> list = new ArrayList<>();
+
     }
 
     public void print(){

@@ -61,9 +61,9 @@ public class Graph {
         return false;
     }
 
-    public boolean hasBFSPath(int source, int destinaion){
+    public boolean hasBFSPath(int source, int destination){
         Node sourceNode = getNode(source);
-        Node destinationNode = getNode(destinaion);
+        Node destinationNode = getNode(destination);
         return hasBFSPath(sourceNode, destinationNode);
     }
 
@@ -76,8 +76,7 @@ public class Graph {
         while(!queue.isEmpty()) {
             queue.forEach(e -> System.out.println(e.id));
 
-//            System.out.println("end of queue");
-
+            System.out.println("end of queue");
             Node temp = queue.remove();
 
             if(visited.contains(temp.id)){
@@ -87,9 +86,7 @@ public class Graph {
             if(temp == destination) {
                 return true;
             }
-
             visited.add(temp.id);
-
             queue.addAll(temp.adjacents);
         }
 

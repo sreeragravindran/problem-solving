@@ -1,7 +1,6 @@
 package ProblemSolving.matrix;
 
 import ProblemSolving.matrix.TilesAndWalls.GameBoard;
-import ProblemSolving.matrix.TilesAndWalls.Position;
 import org.junit.Assert;
 import org.junit.Test;
 

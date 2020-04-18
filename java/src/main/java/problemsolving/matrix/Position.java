@@ -1,4 +1,4 @@
-package ProblemSolving.matrix.TilesAndWalls;
+package ProblemSolving.matrix;
 
 public class Position {
 
@@ -7,9 +7,9 @@ public class Position {
 
     public int movesTaken; // number of moves to get to this position
 
-    public Position(int x, int y){
-        this.row = x;
-        this.col = y;
+    public Position(int row, int col){
+        this.row = row;
+        this.col = col;
     }
 
     @Override

@@ -6,14 +6,15 @@ import ProblemSolving.matrix.Position;
 /*
     A gradient matrix is one where the values horizontally and vertically
  */
-public class GradientMatrix {
+public class GradientMatrixSearch {
 
     int[][] matrix ;
-
     int rowSize;
     int colSize;
 
-    public GradientMatrix(int[][] matrix){
+    public GradientMatrixSearch(int[][] matrix){
+
+        // assumption, the input matrix is always a gradient matrix
         this.matrix = matrix;
         this.rowSize = matrix.length;
         this.colSize = matrix[0].length;

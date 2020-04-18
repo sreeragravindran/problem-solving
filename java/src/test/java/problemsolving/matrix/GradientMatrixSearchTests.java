@@ -1,10 +1,10 @@
 package ProblemSolving.matrix;
 
-import ProblemSolving.matrix.GradientMatrix.GradientMatrix;
+import ProblemSolving.matrix.GradientMatrix.GradientMatrixSearch;
 import org.junit.Assert;
 import org.junit.Test;
 
-public class GradientMatrixTests {
+public class GradientMatrixSearchTests {
 
     @Test
     public void should_return_correct_position() {
@@ -16,7 +16,7 @@ public class GradientMatrixTests {
                 {10, 14, 16, 18}
         };
 
-        GradientMatrix gradientMatrix = new GradientMatrix(matrix);
+        GradientMatrixSearch gradientMatrix = new GradientMatrixSearch(matrix);
 
         Position position = gradientMatrix.search(4);
         Assert.assertEquals(new Position(1,1), position);

@@ -4,7 +4,7 @@ import ProblemSolving.matrix.Position;
 
 
 /*
-    A gradient matrix is one where the values horizontally and vertically
+    A gradient matrix is one where the values are sorted horizontally and vertically
  */
 public class GradientMatrixSearch {
 

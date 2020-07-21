@@ -1,7 +1,7 @@
 package poc;
 
+import org.junit.Assert;
 import org.junit.Test;
-import sun.jvm.hotspot.utilities.Assert;
 
 import javax.swing.text.html.Option;
 import java.time.LocalDateTime;
@@ -17,7 +17,7 @@ public class EncoderTest {
     public void test(){
         String hash = Encoder.base62Encode(9999);
 
-        Assert.that( hash.length() > 0, "hash should not be empty");
+        Assert.assertTrue("hash should not be empty",  hash.length() > 0);
 
         List<String> list = new ArrayList<>();
         //Assert.that(list.get(-1) == null, "");

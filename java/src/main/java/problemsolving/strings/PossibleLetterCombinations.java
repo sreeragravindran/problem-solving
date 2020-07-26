@@ -23,6 +23,11 @@ public class PossibleLetterCombinations {
         this._letterMap = new String[] {"","","abc","def","ghi","jkl","mno","pqrs","tuv","wxyz"};
     }
 
+    /*
+
+        Space Complexity : m ^ n where m is letters mapped to digit, n is the number of digits in the input
+
+     */
     public List<String> get(String digits) {
         if(digits.length() == 0){
             return null;
@@ -41,3 +46,5 @@ public class PossibleLetterCombinations {
         return output;
     }
 }
+
+

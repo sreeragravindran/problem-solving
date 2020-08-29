@@ -4,7 +4,7 @@ import java.util.*;
 
 public class LRUCache<K,V> {
 
-    LinkedHashMap<K, V> _cache;
+    Map<K, V> _cache;
     int _capacity = 2;
 
     public LRUCache(Integer capacity){

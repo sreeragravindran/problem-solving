@@ -1,0 +1,1 @@
+Given a string, generate all possible permutations. 

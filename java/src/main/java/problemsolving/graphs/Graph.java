@@ -74,9 +74,10 @@ public class Graph {
         queue.add(source);
 
         while(!queue.isEmpty()) {
-            queue.forEach(e -> System.out.println(e.id));
 
+            queue.forEach(e -> System.out.println(e.id));
             System.out.println("end of queue");
+
             Node temp = queue.remove();
 
             if(visited.contains(temp.id)){

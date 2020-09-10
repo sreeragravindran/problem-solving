@@ -20,7 +20,6 @@ public class Approach1 {
                 q.addAll(perms);
             }
         }
-
         return output;
      }
 

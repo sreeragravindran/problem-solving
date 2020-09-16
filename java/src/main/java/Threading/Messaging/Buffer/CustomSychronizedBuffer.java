@@ -31,7 +31,7 @@ public class CustomSychronizedBuffer implements  Buffer{
             occupied = true;
 
             displayState("Producer writes " + buffer);
-            // singals all threads waiting on canRead condition to get ready to continue execution
+            // signals all threads waiting on canRead condition to get ready to continue execution
             canRead.signalAll();
         }
         finally {

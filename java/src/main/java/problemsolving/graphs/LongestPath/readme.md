@@ -41,5 +41,14 @@ find the longest continuous route. Sample input
     ["BOS", "PHL"]
 ]
 
+SFO EWR OAK
+             
+        TRT
+             
+        BOS 
+            PHL 
+                MSP 
+                    ATL 
+
 Desired output
 ["DFW", "SJC", "LAX", "SFO", "EWR", "BOS", "PHL", "MSP", "ATL"]

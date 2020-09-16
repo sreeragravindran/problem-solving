@@ -13,6 +13,6 @@ public class JobPoller {
     private void startPolling(){
         // run on a seprate thread
         // when it is time
-        executor.execute();
+//        executor.execute();
     }
 }

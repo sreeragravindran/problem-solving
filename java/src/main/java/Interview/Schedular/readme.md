@@ -2,11 +2,11 @@
 
 In-memory Job Scheduler (library)
 
-1. Runs a job at a given point of time
-2. Parallelism is tunable by client
-
-    number of the jobs running in parallel 
-    each job runs sequentially underneath 
+requirements 
+1. Should be able to schedule a job  
+2. Should limit the numbers of jobs scheduled in parallel  
+3. parallelism is tunable by client 
+ 
 */
 
 JobSchedular {

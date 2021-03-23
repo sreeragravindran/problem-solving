@@ -15,18 +15,18 @@ public class Graph {
 
     private HashMap<Integer, Node> nodes = new HashMap<>();
 
-    private Node getNode(int id){
-        if(!nodes.containsKey(id)) {
-            nodes.put(id, new Node(id));
-        }
-        return nodes.get(id);
-    }
-
     public Graph addEdge(int source, int destination) {
         Node sourceNode = getNode(source);
         Node destinationNode = getNode(destination);
         sourceNode.adjacents.add(destinationNode);
         return this;
+    }
+
+    private Node getNode(int id){
+        if(!nodes.containsKey(id)) {
+            nodes.put(id, new Node(id));
+        }
+        return nodes.get(id);
     }
 
     public boolean hasDFSPath(int source, int destination) {

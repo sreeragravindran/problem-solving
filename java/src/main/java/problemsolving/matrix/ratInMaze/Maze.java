@@ -4,23 +4,64 @@ import ProblemSolving.matrix.Position;
 
 public class Maze {
 
-    public int[][] solveMaze(int[][] maze, Position startingPosition) {
-        int size = maze.length;
-        int[][] outputPath = new int[size][size];
-        solveMaze(maze, startingPosition, new Position(size -1, size -1), outputPath);
-        return outputPath;
+    private int[][] maze;
+    private int[][] shortestPath;
+
+    public Maze(int[][] maze){
+        this.maze = maze;
+        this.shortestPath = new int[maze.length][maze.length];
     }
 
-    public boolean solveMaze(int[][] maze, Position currentPosition, Position destinationPosition, int[][] outputPath){
+    public int[][] solveMaze(Position startingPosition) {
+        int size = maze.length;
+        solveMaze(maze, startingPosition, new Position(size -1, size -1));
+        return shortestPath;
+    }
+
+    private boolean solveMaze(int[][] maze, Position currentPosition, Position destinationPosition){
         // if position is destination
-        if(currentPosition == destinationPosition){
+        if(currentPosition.equals(destinationPosition)){
+            markPositionInPath(currentPosition);
             return true;
         }
 
+        if(isValidPosition(currentPosition)) {
+            markPositionInPath(currentPosition);
 
+            if(solveMaze(maze, currentPosition.moveRight(), destinationPosition))
+                return true;
+
+            if(solveMaze(maze, currentPosition.moveDown(), destinationPosition))
+                return true;
+
+            unmarkPositionInPath(currentPosition);
+        }
+
+        return false;
     }
 
-    public isValidPosition(Position position){
-        return position.row >= 0 && position.row <
+    private boolean isValidPosition(Position position){
+        return position.row >= 0 && position.row < maze.length
+                && position.col >=0 && position.col < maze.length
+                && maze[position.row][position.col] == 1;
+    }
+
+    private void markPositionInPath(Position position){
+        shortestPath[position.row][position.col] = 1;
+    }
+
+    private void unmarkPositionInPath(Position position){
+        shortestPath[position.row][position.col] = 0;
     }
 }
+
+
+/** complexity
+
+total cells n ^ 2
+
+ time complexity = O(n*n)
+    recursion can run upto the max
+ space complexity O(n*n)
+
+ **/

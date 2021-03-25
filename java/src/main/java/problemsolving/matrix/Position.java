@@ -30,5 +30,14 @@ public class Position {
         return (int)(Math.pow(row +1 ,1) + Math.pow(col +1, 2));
     }
 
+    public Position moveRight(){
+        return new Position(this.row, this.col + 1);
+    }
+
+    public Position moveDown(){
+        return new Position(this.row + 1, this.col);
+    }
+
+
 
 }

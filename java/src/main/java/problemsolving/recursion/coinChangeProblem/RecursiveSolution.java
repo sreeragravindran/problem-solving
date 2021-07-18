@@ -9,7 +9,7 @@ public class RecursiveSolution {
     public int minimumCoins(int[] denominations, int amount){
         // sort in desc order
         // so process the bigger denominations first
-        // when the amount becomes 0, totakl
+        // when the amount becomes 0, total
         Arrays.sort(denominations);
         this._remainingAmount = amount;
         return countMinimumCoins(amount, denominations);
@@ -38,7 +38,7 @@ public class RecursiveSolution {
             }
         }
         // if amount was consumed, count has minimum value, else -1;
-        return _remainingAmount ==0 ? count : -1;
+        return _remainingAmount == 0 ? count : -1;
     }
 
 

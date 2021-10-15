@@ -1,6 +1,6 @@
-package ProblemSolving.matrix;
+package problemsolving.matrix;
 
-import ProblemSolving.matrix.ratInMaze.Maze;
+import problemsolving.matrix.ratInMaze.Maze;
 import org.junit.Assert;
 import org.junit.Test;
 

@@ -1,7 +1,6 @@
-package ProblemSolving;
+package problemsolving;
 
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.List;
 
 public class PowersOf2 {

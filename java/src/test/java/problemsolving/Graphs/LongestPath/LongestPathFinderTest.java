@@ -1,7 +1,7 @@
-package ProblemSolving.graphs.LongestPath;
+package problemsolving.graphs.LongestPath;
 
 
-import ProblemSolving.graphs.Node;
+import problemsolving.graphs.Node;
 import org.junit.Assert;
 import org.junit.Test;
 
@@ -48,7 +48,7 @@ public class LongestPathFinderTest {
         pairs.add(new Pair("BOS","PHL"));
 
         LongestPathFinder longestPathFinder = new LongestPathFinder(pairs);
-        LongestPathFinder.MetaNode meta = longestPathFinder.getLongestPath();
+        LongestPathFinder.MetaNode meta = longestPathFinder.getLongestPathDFS();
 
         LinkedList<Node> expected = new LinkedList<>();
         expected.add(new Node("DFW"));

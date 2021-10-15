@@ -1,4 +1,4 @@
-package ProblemSolving.strings;
+package problemsolving.strings;
 
 //
 /*

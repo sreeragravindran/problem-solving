@@ -1,6 +1,7 @@
-package Interview.Schedular;
+package coding;
 
 
+import coding.schedular.Job;
 import org.junit.Assert;
 import org.junit.Test;
 
@@ -9,7 +10,7 @@ import java.util.Date;
 
 public class JobTest {
 
-    public class myJob extends Job{
+    public class myJob extends Job {
 
         public  myJob(Date date){
             super(date);

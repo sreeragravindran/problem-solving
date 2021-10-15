@@ -1,4 +1,4 @@
-package ProblemSolving.strings.WordWrap;
+package problemsolving.strings.WordWrap;
 
 import org.junit.Assert;
 import org.junit.Test;

@@ -1,4 +1,4 @@
-package ProblemSolving.graphs.LongestPath;
+package problemsolving.graphs.LongestPath;
 
 public class Pair {
 

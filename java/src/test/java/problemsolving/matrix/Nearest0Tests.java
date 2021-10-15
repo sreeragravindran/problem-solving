@@ -1,6 +1,6 @@
-package ProblemSolving.matrix;
+package problemsolving.matrix;
 
-import ProblemSolving.matrix.nearest0.BFSSolution;
+import problemsolving.matrix.nearest0.BFSSolution;
 import org.junit.Test;
 
 public class Nearest0Tests {

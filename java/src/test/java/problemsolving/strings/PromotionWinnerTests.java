@@ -1,6 +1,6 @@
-package ProblemSolving.strings;
+package problemsolving.strings;
 
-import ProblemSolving.strings.promotionWinner.Result;
+import problemsolving.strings.promotionWinner.Result;
 import org.junit.Assert;
 import org.junit.Test;
 

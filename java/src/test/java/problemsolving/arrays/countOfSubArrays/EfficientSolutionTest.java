@@ -1,4 +1,4 @@
-package ProblemSolving.arrays.countOfSubArrays;
+package problemsolving.arrays.countOfSubArrays;
 
 import org.junit.Assert;
 import org.junit.Test;

@@ -1,4 +1,4 @@
-package ProblemSolving.hashmap;
+package problemsolving.hashmap;
 
 import java.util.*;
 

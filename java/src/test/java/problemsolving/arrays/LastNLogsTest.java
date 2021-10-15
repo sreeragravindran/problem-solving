@@ -1,9 +1,9 @@
-package ProblemSolving.arrays;
+package problemsolving.arrays;
 
 import org.junit.Assert;
 import org.junit.Test;
-import ProblemSolving.arrays.LastNLogs.ILogger;
-import ProblemSolving.arrays.LastNLogs.Logger;
+import problemsolving.arrays.LastNLogs.ILogger;
+import problemsolving.arrays.LastNLogs.Logger;
 
 public class LastNLogsTest {
 

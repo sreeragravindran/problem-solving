@@ -1,4 +1,4 @@
-package ProblemSolving.graphs;
+package problemsolving.graphs;
 
 import java.util.*;
 

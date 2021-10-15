@@ -1,6 +1,4 @@
-package ProblemSolving.arrays.SortKSortedArray;
-
-import javafx.collections.transformation.SortedList;
+package problemsolving.arrays.SortKSortedArray;
 
 import java.util.ArrayList;
 import java.util.List;

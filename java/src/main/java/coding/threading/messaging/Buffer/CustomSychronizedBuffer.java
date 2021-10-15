@@ -1,4 +1,4 @@
-package Threading.Messaging.Buffer;
+package coding.threading.messaging.Buffer;
 
 import java.util.concurrent.locks.Condition;
 import java.util.concurrent.locks.Lock;

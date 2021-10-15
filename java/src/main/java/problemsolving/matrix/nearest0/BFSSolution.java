@@ -1,4 +1,4 @@
-package ProblemSolving.matrix.nearest0;
+package problemsolving.matrix.nearest0;
 
 import java.util.LinkedList;
 import java.util.Queue;

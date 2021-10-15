@@ -1,8 +1,8 @@
-package ProblemSolving.strings;
+package problemsolving.strings;
 
 import org.junit.Test;
 import junit.framework.Assert;
-import ProblemSolving.Strings.PermutationOfPalindrome;
+import problemsolving.Strings.PermutationOfPalindrome;
 
 public class PermutationOfPalindromeTests {
 

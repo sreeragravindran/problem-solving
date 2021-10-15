@@ -1,4 +1,4 @@
-package Interview.Schedular;
+package coding.schedular;
 
 import java.util.Date;
 import java.util.UUID;

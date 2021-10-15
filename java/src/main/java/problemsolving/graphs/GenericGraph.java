@@ -1,4 +1,4 @@
-package ProblemSolving.graphs;
+package problemsolving.graphs;
 
 import lombok.Getter;
 
@@ -9,8 +9,8 @@ public class GenericGraph<T extends Node> {
     @Getter
     private HashMap<T, T> nodes = new HashMap<>();
 
-    private T getNode(T node){
-        if(!nodes.containsKey(node)) {
+    private T getNode(T node) {
+        if (!nodes.containsKey(node)) {
             nodes.put(node, node);
         }
         return nodes.get(node);

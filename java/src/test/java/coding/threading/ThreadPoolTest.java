@@ -1,6 +1,6 @@
-package Threading;
+package coding.threading;
 
-import Threading.ThreadPool.ThreadPool;
+import coding.threading.threadpool.ThreadPool;
 import org.junit.Test;
 
 public class ThreadPoolTest {

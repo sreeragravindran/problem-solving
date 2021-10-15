@@ -1,6 +1,6 @@
-package ProblemSolving.strings.permutations;
+package problemsolving.strings.permutations;
 
-import ProblemSolving.strings.permuations.Approach1;
+import problemsolving.strings.permuations.Approach1;
 import org.junit.Assert;
 import org.junit.Test;
 

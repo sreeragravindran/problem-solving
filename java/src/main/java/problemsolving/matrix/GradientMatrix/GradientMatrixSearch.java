@@ -1,6 +1,6 @@
-package ProblemSolving.matrix.GradientMatrix;
+package problemsolving.matrix.GradientMatrix;
 
-import ProblemSolving.matrix.Position;
+import problemsolving.matrix.Position;
 
 
 /*

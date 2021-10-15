@@ -1,4 +1,4 @@
-package Threading.Interruption;
+package coding.threading.interruption;
 
 public class PrintNumbers implements  Runnable{
 

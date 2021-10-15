@@ -1,6 +1,6 @@
-package ProblemSolving.Graphs;
+package problemsolving.Graphs;
 
-import ProblemSolving.graphs.Node;
+import problemsolving.graphs.Node;
 import org.junit.Assert;
 import org.junit.Test;
 

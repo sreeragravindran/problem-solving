@@ -1,4 +1,4 @@
-package Threading.Messaging.Buffer;
+package coding.threading.messaging.Buffer;
 
 public class SynchronizedBuffer implements Buffer {
 

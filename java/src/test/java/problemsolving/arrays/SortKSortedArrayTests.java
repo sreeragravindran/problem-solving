@@ -1,6 +1,6 @@
-package ProblemSolving.arrays;
+package problemsolving.arrays;
 
-import ProblemSolving.arrays.SortKSortedArray.KSortedArraySorter;
+import problemsolving.arrays.SortKSortedArray.KSortedArraySorter;
 import org.junit.Assert;
 import org.junit.Test;
 

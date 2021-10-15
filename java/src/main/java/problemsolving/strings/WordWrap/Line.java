@@ -1,4 +1,4 @@
-package ProblemSolving.strings.WordWrap;
+package problemsolving.strings.WordWrap;
 
 public class Line {
     private int maxLength;

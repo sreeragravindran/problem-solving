@@ -1,6 +1,6 @@
-package ProblemSolving.matrix;
+package problemsolving.matrix;
 
-import ProblemSolving.matrix.GradientMatrix.GradientMatrixSearch;
+import problemsolving.matrix.GradientMatrix.GradientMatrixSearch;
 import org.junit.Assert;
 import org.junit.Test;
 

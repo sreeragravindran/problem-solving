@@ -1,6 +1,6 @@
-package ProblemSolving.tree.LowestCommonAncestor;
+package problemsolving.tree.LowestCommonAncestor;
 
-import ProblemSolving.tree.BinaryTreeNode;
+import problemsolving.tree.BinaryTreeNode;
 import org.junit.Assert;
 import org.junit.Test;
 

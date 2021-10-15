@@ -1,4 +1,4 @@
-package ProblemSolving.strings.promotionWinner;
+package problemsolving.strings.promotionWinner;
 
 import java.util.Arrays;
 import java.util.List;

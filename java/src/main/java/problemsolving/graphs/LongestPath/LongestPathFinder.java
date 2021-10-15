@@ -1,7 +1,7 @@
-package ProblemSolving.graphs.LongestPath;
+package problemsolving.graphs.LongestPath;
 
-import ProblemSolving.graphs.GenericGraph;
-import ProblemSolving.graphs.Node;
+import problemsolving.graphs.GenericGraph;
+import problemsolving.graphs.Node;
 import lombok.EqualsAndHashCode;
 
 import java.util.*;
@@ -12,44 +12,44 @@ public class LongestPathFinder {
 
     private Map<MetaNode, MetaNode> visited;
 
-    public LongestPathFinder(List<Pair> pairs){
+    public LongestPathFinder(List<Pair> pairs) {
         graph = new GenericGraph<Node>();
         visited = new HashMap<>();
         addEdges(pairs);
     }
 
-    public LongestPathFinder(GenericGraph<Node> graph){
+    public LongestPathFinder(GenericGraph<Node> graph) {
         this.graph = graph;
     }
 
-    private void addEdge(Pair pair){
+    private void addEdge(Pair pair) {
         graph.addEdge(new Node(pair.getOrigin()), new Node(pair.getDestination()));
     }
 
-    private void addEdges(List<Pair> pairs){
+    private void addEdges(List<Pair> pairs) {
         pairs.forEach(pair -> addEdge(pair));
     }
 
-    public MetaNode getLongestPath() {
+    public MetaNode getLongestPathDFS() {
         MetaNode rootNode = new MetaNode();
-        for(Node node : graph.getNodes().keySet()){
-             MetaNode metaNode = getLongestPath(node);
-             if (metaNode.longestDistanceDown > rootNode.longestDistanceDown){
-                 rootNode = metaNode;
-             }
+        for (Node node : graph.getNodes().keySet()) {
+            MetaNode metaNode = getLongestPathDFS(node);
+            if (metaNode.longestDistanceDown > rootNode.longestDistanceDown) {
+                rootNode = metaNode;
+            }
         }
         return rootNode;
     }
 
-    private MetaNode getLongestPath(Node node){
+    private MetaNode getLongestPathDFS(Node node) {
         MetaNode current = new MetaNode(node, 0);
-        if(visited.containsKey(current)){
+        if (visited.containsKey(current)) {
             return visited.get(current);
         }
-        for(Node childNode : node.getAdjacents()){
-            MetaNode child = getLongestPath(childNode);
+        for (Node childNode : node.getAdjacents()) {
+            MetaNode child = getLongestPathDFS(childNode);
             int temp = child.longestDistanceDown + 1;
-            if(temp > current.longestDistanceDown){
+            if (temp > current.longestDistanceDown) {
                 current.longestDistanceDown = temp;
                 current.next = child;
             }
@@ -64,9 +64,10 @@ public class LongestPathFinder {
         public MetaNode next;
         public int longestDistanceDown;
 
-        public MetaNode(){};
+        public MetaNode() {
+        }
 
-        public MetaNode(Node node, int longestDistanceDown){
+        public MetaNode(Node node, int longestDistanceDown) {
             this.node = node;
             this.longestDistanceDown = longestDistanceDown;
         }

@@ -1,6 +1,6 @@
-package ProblemSolving.Graphs.minimisingPermutations;
+package problemsolving.Graphs.minimisingPermutations;
 
-import ProblemSolving.graphs.minimizingPermutations.Solution;
+import problemsolving.graphs.minimizingPermutations.Solution;
 import groovy.lang.Tuple2;
 import org.junit.Assert;
 import org.junit.Test;

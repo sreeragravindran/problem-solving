@@ -1,6 +1,6 @@
-package ProblemSolving.strings.minimumLengthSubstring;
+package problemsolving.strings.minimumLengthSubstring;
 
-import ProblemSolving.strings.mininumLengthSubstring.Solution;
+import problemsolving.strings.mininumLengthSubstring.Solution;
 import org.junit.Assert;
 import org.junit.Test;
 

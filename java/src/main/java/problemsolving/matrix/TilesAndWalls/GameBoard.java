@@ -1,4 +1,4 @@
-package ProblemSolving.matrix.TilesAndWalls;
+package problemsolving.matrix.TilesAndWalls;
 
 /*
 
@@ -17,7 +17,7 @@ and start = (3, 0) (bottom left) and end = (0, 0) (top left), the minimum number
 */
 
 
-import ProblemSolving.matrix.Position;
+import problemsolving.matrix.Position;
 
 import java.util.HashSet;
 import java.util.LinkedList;

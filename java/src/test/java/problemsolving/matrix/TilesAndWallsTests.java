@@ -1,6 +1,6 @@
-package ProblemSolving.matrix;
+package problemsolving.matrix;
 
-import ProblemSolving.matrix.TilesAndWalls.GameBoard;
+import problemsolving.matrix.TilesAndWalls.GameBoard;
 import org.junit.Assert;
 import org.junit.Test;
 

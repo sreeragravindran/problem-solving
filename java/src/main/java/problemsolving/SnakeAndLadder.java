@@ -1,11 +1,6 @@
-package ProblemSolving;
-import java.io.*;
-import java.math.*;
-import java.security.*;
-import java.text.*;
+package problemsolving;
+
 import java.util.*;
-import java.util.concurrent.*;
-import java.util.regex.*;
 
 
 public class SnakeAndLadder {
@@ -16,34 +11,34 @@ public class SnakeAndLadder {
             public int position;
             public int movesToPosition;
 
-            public BoardPosition(int position, int movesToPosition){
+            public BoardPosition(int position, int movesToPosition) {
                 this.position = position;
                 this.movesToPosition = movesToPosition;
             }
         }
 
-        class Board{
+        class Board {
             private boolean[] visited = new boolean[101];
             private Map<Integer, Integer> ladders;
             private Map<Integer, Integer> snakes;
 
-            public Board(Map<Integer, Integer> ladders, Map<Integer, Integer> snakes){
+            public Board(Map<Integer, Integer> ladders, Map<Integer, Integer> snakes) {
                 this.ladders = ladders;
                 this.snakes = snakes;
             }
 
-            public void setVisited(BoardPosition boardPosition){
+            public void setVisited(BoardPosition boardPosition) {
                 visited[boardPosition.position] = true;
             }
 
-            public boolean isVisited(BoardPosition boardPosition){
+            public boolean isVisited(BoardPosition boardPosition) {
                 return visited[boardPosition.position];
             }
 
-            public BoardPosition moveToPosition(BoardPosition boardPosition){
-                if(ladders.containsKey(boardPosition.position)){
+            public BoardPosition moveToPosition(BoardPosition boardPosition) {
+                if (ladders.containsKey(boardPosition.position)) {
                     boardPosition.position = ladders.get(boardPosition.position);
-                } else if(snakes.containsKey(boardPosition.position)){
+                } else if (snakes.containsKey(boardPosition.position)) {
                     boardPosition.position = snakes.get(boardPosition.position);
                 }
 
@@ -57,12 +52,12 @@ public class SnakeAndLadder {
 
         // convert laddders matrix to map
         Map<Integer, Integer> ladderMap = new HashMap<Integer, Integer>();
-        for(int[] row : ladders){
+        for (int[] row : ladders) {
             ladderMap.put(row[0], row[1]);
         }
 
         Map<Integer, Integer> snakesMap = new HashMap<Integer, Integer>();
-        for(int[] row : snakes){
+        for (int[] row : snakes) {
             snakesMap.put(row[0], row[1]);
         }
 
@@ -72,23 +67,23 @@ public class SnakeAndLadder {
         queue.add(boardPosition);
         board.setVisited(boardPosition);
 
-        while(!queue.isEmpty()){
+        while (!queue.isEmpty()) {
             BoardPosition currentPosition = queue.remove();
-            if(currentPosition.position == 100){
+            if (currentPosition.position == 100) {
                 return currentPosition.movesToPosition;
             }
 
-            for(int i = 1; i <= 6 && currentPosition.position + i <= 100; i++){
+            for (int i = 1; i <= 6 && currentPosition.position + i <= 100; i++) {
 
                 BoardPosition newPosition = board.moveToPosition(new BoardPosition(
                         currentPosition.position + i,
                         currentPosition.movesToPosition + 1));
 
-                if(newPosition.position == 100) {
+                if (newPosition.position == 100) {
                     return newPosition.movesToPosition;
                 }
 
-                if(!board.isVisited(newPosition)){
+                if (!board.isVisited(newPosition)) {
                     board.setVisited(newPosition);
                     queue.add(newPosition);
                 }

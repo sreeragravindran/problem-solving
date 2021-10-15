@@ -1,4 +1,4 @@
-package ProblemSolving.arrays.countOfSubArrays;
+package problemsolving.arrays.countOfSubArrays;
 
 public class EfficientSolution {
     public static int findCountOfConsecutiveSubArrays(int[] arr){

@@ -1,4 +1,4 @@
-package ProblemSolving.tree;
+package problemsolving.tree;
 
 import lombok.Getter;
 

@@ -1,4 +1,4 @@
-package Interview.Schedular;
+package coding.schedular;
 
 /* an abstraction to hold schduled jobs */
 

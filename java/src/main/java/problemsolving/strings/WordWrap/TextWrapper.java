@@ -1,8 +1,6 @@
-package ProblemSolving.strings.WordWrap;
+package problemsolving.strings.WordWrap;
 
 
-import com.intellij.vcs.log.ui.frame.WrappedFlowLayout;
-import com.twelvemonkeys.lang.StringUtil;
 import org.apache.commons.lang3.StringUtils;
 
 //this is a simple text,

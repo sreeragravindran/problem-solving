@@ -1,4 +1,4 @@
-package ProblemSolving.arrays.LastNLogs;
+package problemsolving.arrays.LastNLogs;
 
 public interface ILogger {
 

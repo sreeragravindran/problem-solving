@@ -1,4 +1,4 @@
-package ProblemSolving.trie;
+package problemsolving.trie;
 
 class Trie {
 

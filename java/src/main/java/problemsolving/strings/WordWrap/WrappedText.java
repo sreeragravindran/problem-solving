@@ -1,4 +1,4 @@
-package ProblemSolving.strings.WordWrap;
+package problemsolving.strings.WordWrap;
 
 import java.util.ArrayList;
 import java.util.List;

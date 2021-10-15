@@ -1,4 +1,4 @@
-package Threading.ThreadPool;
+package coding.threading.threadpool;
 
 import java.util.concurrent.BlockingQueue;
 

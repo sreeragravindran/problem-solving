@@ -1,4 +1,4 @@
-package ProblemSolving.recursion.coinChangeProblem;
+package problemsolving.recursion.coinChangeProblem;
 
 import java.util.Arrays;
 

@@ -1,4 +1,4 @@
-package ProblemSolving.strings.permuations;
+package problemsolving.strings.permuations;
 
 import java.util.*;
 

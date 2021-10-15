@@ -1,6 +1,6 @@
-package ProblemSolving.matrix.ratInMaze;
+package problemsolving.matrix.ratInMaze;
 
-import ProblemSolving.matrix.Position;
+import problemsolving.matrix.Position;
 
 public class Maze {
 

@@ -1,4 +1,4 @@
-package ProblemSolving.matrix;
+package problemsolving.matrix;
 
 public class Position {
 

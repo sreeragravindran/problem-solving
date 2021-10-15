@@ -1,8 +1,5 @@
-package ProblemSolving.strings;
+package problemsolving.strings;
 
-import com.intellij.ui.ListUtil;
-
-import java.util.Arrays;
 import java.util.LinkedList;
 import java.util.List;
 

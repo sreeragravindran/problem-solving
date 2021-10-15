@@ -1,11 +1,9 @@
-package ProblemSolving.hashmap;
+package problemsolving.hashmap;
 
-import ProblemSolving.hashmap.LRUCache;
 import org.junit.Assert;
 import org.junit.Test;
 
 import java.util.Optional;
-import java.util.Set;
 
 public class LRUCacheTest {
 

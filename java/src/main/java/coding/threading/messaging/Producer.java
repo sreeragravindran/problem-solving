@@ -1,6 +1,6 @@
-package Threading.Messaging;
+package coding.threading.messaging;
 
-import Threading.Messaging.Buffer.Buffer;
+import coding.threading.messaging.Buffer.Buffer;
 
 import java.security.SecureRandom;
 

@@ -1,4 +1,4 @@
-package Interview.Schedular;
+package coding.schedular;
 
 public class CapacityOverflowException extends RuntimeException{
 

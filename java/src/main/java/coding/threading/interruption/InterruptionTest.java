@@ -8,10 +8,12 @@ public class InterruptionTest {
 
         ExecutorService executor = Executors.newSingleThreadExecutor();
         Future printNumbers = executor.submit(new PrintNumbers());
-        //Thread.sleep(3000);
-        // printNumbers.cancel(true);
+
+//        Thread.sleep(3000);
+//        printNumbers.cancel(true);
+
         executor.shutdown();
-        executor.awaitTermination(2000, TimeUnit.MILLISECONDS);
+        executor.awaitTermination(100000, TimeUnit.MILLISECONDS);
         System.out.printf("main thread terminated !");
     }
 }

@@ -16,8 +16,8 @@ Output: ["ad", "ae", "af", "bd", "be", "bf", "cd", "ce", "cf"].
 public class PossibleLetterCombinations {
     private String[] _letterMap;
 
-    public PossibleLetterCombinations(){
-        this._letterMap = new String[] {"","","abc","def","ghi","jkl","mno","pqrs","tuv","wxyz"};
+    public PossibleLetterCombinations() {
+        this._letterMap = new String[]{"", "", "abc", "def", "ghi", "jkl", "mno", "pqrs", "tuv", "wxyz"};
     }
 
     /*
@@ -26,17 +26,17 @@ public class PossibleLetterCombinations {
 
      */
     public List<String> get(String digits) {
-        if(digits.length() == 0){
+        if (digits.length() == 0) {
             return null;
         }
         LinkedList<String> output = new LinkedList<>();
         output.add("");
 
-        for(int i=0; i < digits.length(); i++){
-            while(output.peek().length() == i){
+        for (int i = 0; i < digits.length(); i++) {
+            while (output.peek().length() == i) {
                 String temp = output.remove();
                 int digit = Integer.parseInt(String.valueOf(digits.charAt(i)));
-                for(char c : _letterMap[digit].toCharArray())
+                for (char c : _letterMap[digit].toCharArray())
                     output.add(temp + c);
             }
         }

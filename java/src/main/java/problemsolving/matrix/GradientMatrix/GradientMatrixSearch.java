@@ -2,17 +2,16 @@ package problemsolving.matrix.GradientMatrix;
 
 import problemsolving.matrix.Position;
 
-
 /*
     A gradient matrix is one where the values are sorted horizontally and vertically
  */
 public class GradientMatrixSearch {
 
-    int[][] matrix ;
+    int[][] matrix;
     int rowSize;
     int colSize;
 
-    public GradientMatrixSearch(int[][] matrix){
+    public GradientMatrixSearch(int[][] matrix) {
 
         // assumption, the input matrix is always a gradient matrix
         this.matrix = matrix;
@@ -20,30 +19,30 @@ public class GradientMatrixSearch {
         this.colSize = matrix[0].length;
     }
 
-    public Position search(int value){
+    public Position search(int value) {
         try {
             Position position = startPosition();
-            while(valueAt(position) != value){
+            while (valueAt(position) != value) {
                 position = moveNext(position, value);
             }
             return position;
-        } catch (IndexOutOfBoundsException iEx){
+        } catch (IndexOutOfBoundsException iEx) {
             return null;
         }
     }
 
 
-    private int valueAt(Position position){
+    private int valueAt(Position position) {
         return matrix[position.row][position.col];
     }
 
-    private Position startPosition(){
-        return new Position(rowSize -1,0);
+    private Position startPosition() {
+        return new Position(rowSize - 1, 0);
     }
 
-    private Position moveNext(Position position, int value){
+    private Position moveNext(Position position, int value) {
         Position newPosition;
-        if(valueAt(position) > value ){
+        if (valueAt(position) > value) {
             newPosition = moveUp(position);
         } else {
             newPosition = moveRight(position);
@@ -52,13 +51,12 @@ public class GradientMatrixSearch {
         return newPosition;
     }
 
-    private Position moveUp(Position position){
+    private Position moveUp(Position position) {
         return new Position(position.row - 1, position.col);
     }
 
-
-    private Position moveRight(Position position){
-        return new Position(position.row, position.col+1);
+    private Position moveRight(Position position) {
+        return new Position(position.row, position.col + 1);
     }
 }
 

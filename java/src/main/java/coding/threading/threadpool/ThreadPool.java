@@ -11,27 +11,27 @@ public class ThreadPool {
     private List<WorkerThread> threads = new ArrayList<WorkerThread>();
     private boolean isStopped = false;
 
-    public ThreadPool(int noOfThreads, int maxNoOfTasks){
+    public ThreadPool(int noOfThreads, int maxNoOfTasks) {
         taskQueue = new ArrayBlockingQueue(maxNoOfTasks);
 
-        for(int i=0; i<noOfThreads; i++){
+        for (int i = 0; i < noOfThreads; i++) {
             threads.add(new WorkerThread(taskQueue));
         }
-        for(WorkerThread thread : threads){
+        for (WorkerThread thread : threads) {
             thread.start();
         }
     }
 
-    public synchronized void  execute(Runnable task) throws Exception{
-        if(this.isStopped) throw
+    public synchronized void execute(Runnable task) throws Exception {
+        if (this.isStopped) throw
                 new IllegalStateException("ThreadPool is stopped");
 
         this.taskQueue.add(task);
     }
 
-    public synchronized void stop(){
+    public synchronized void stop() {
         this.isStopped = true;
-        for(WorkerThread thread : threads){
+        for (WorkerThread thread : threads) {
             thread.doStop();
         }
     }

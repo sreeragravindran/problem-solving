@@ -5,12 +5,24 @@ import lombok.Getter;
 @Getter
 public class BinaryTreeNode {
 
-    private final int value;
+    private final int data;
     private BinaryTreeNode left;
     private BinaryTreeNode right;
 
-    public BinaryTreeNode(int value){
-        this.value = value;
+    public BinaryTreeNode(int data){
+        this.data = data;
+    }
+
+    public int getData(){
+        return data;
+    }
+
+    public BinaryTreeNode getLeft(){
+        return left;
+    }
+
+    public BinaryTreeNode getRight(){
+        return right;
     }
 
     public BinaryTreeNode addLeft(int value){

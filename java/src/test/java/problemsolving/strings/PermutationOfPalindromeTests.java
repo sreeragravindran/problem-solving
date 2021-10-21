@@ -2,7 +2,7 @@ package problemsolving.strings;
 
 import org.junit.Test;
 import junit.framework.Assert;
-import problemsolving.Strings.PermutationOfPalindrome;
+import problemsolving.strings.PermutationOfPalindrome;
 
 public class PermutationOfPalindromeTests {
 

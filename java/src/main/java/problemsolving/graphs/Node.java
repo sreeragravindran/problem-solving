@@ -14,6 +14,14 @@ public class Node {
     @Getter
     private List<Node> adjacents;
 
+    public String getId(){
+        return id;
+    }
+
+    public List<Node> getAdjacents() {
+        return adjacents;
+    }
+
     public Node(String id){
         this.id = id;
         adjacents = new ArrayList<>();

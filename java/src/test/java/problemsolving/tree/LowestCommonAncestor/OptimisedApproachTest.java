@@ -15,16 +15,16 @@ public class OptimisedApproachTest {
         root.addRight(3);
 
         BinaryTreeNode result = OptimisedApproach.search(root, 4, 5);
-        Assert.assertEquals(2, result.getValue());
+        Assert.assertEquals(2, result.getData());
 
         result = OptimisedApproach.search(root, 4, 2);
-        Assert.assertEquals(2, result.getValue());
+        Assert.assertEquals(2, result.getData());
 
         result = OptimisedApproach.search(root, 4, 3);
-        Assert.assertEquals(1, result.getValue());
+        Assert.assertEquals(1, result.getData());
 
         result = OptimisedApproach.search(root, 3, 5);
-        Assert.assertEquals(1, result.getValue());
+        Assert.assertEquals(1, result.getData());
 
         result = OptimisedApproach.search(root, 10, 20);
         Assert.assertNull(result);

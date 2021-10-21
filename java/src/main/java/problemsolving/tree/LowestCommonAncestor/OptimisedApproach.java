@@ -9,7 +9,7 @@ public class OptimisedApproach {
             return null;
         }
 
-        if (root.getValue() == valueA || root.getValue() == valueB) {
+        if (root.getData() == valueA || root.getData() == valueB) {
             return root;
         }
 

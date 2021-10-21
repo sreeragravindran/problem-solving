@@ -1,11 +1,15 @@
 package problemsolving.strings.permuations;
 
+import java.time.LocalDateTime;
+import java.time.temporal.ChronoUnit;
 import java.util.*;
 
 public class Approach1 {
 
     // todo: instead of returning in-memory list, use reactive pattern to stream data when available
-    public List<String> getPermutations(String input) {
+    public static List<String> getPermutations(String input) {
+        LocalDateTime startTime = LocalDateTime.now();
+
         List<String> output = new ArrayList<>();
         char[] cArray = input.toCharArray();
         Queue<String> q = new LinkedList();
@@ -20,10 +24,14 @@ public class Approach1 {
                 q.addAll(perms);
             }
         }
+
+        LocalDateTime endTime = LocalDateTime.now();
+        System.out.println("Approach 1 - Elapsed time(ms) : " + ChronoUnit.MILLIS.between(startTime, endTime));
+
         return output;
     }
 
-    public List<String> generatePermutationsForChar(char c, String input) {
+    private static List<String> generatePermutationsForChar(char c, String input) {
 
         List<String> output = new ArrayList<>();
         input = c + input;
@@ -39,7 +47,7 @@ public class Approach1 {
         return output;
     }
 
-    private void swap(char[] array, int i, int i1) {
+    private static void swap(char[] array, int i, int i1) {
         char c = array[i + 1];
         array[i + 1] = array[i];
         array[i] = c;

@@ -16,6 +16,10 @@ public class GenericGraph<T extends Node> {
         return nodes.get(node);
     }
 
+    public HashMap<T, T> getNodes() {
+        return nodes;
+    }
+
     public void addEdge(T source, T destination) {
         T sourceNode = getNode(source);
         T destinationNode = getNode(destination);

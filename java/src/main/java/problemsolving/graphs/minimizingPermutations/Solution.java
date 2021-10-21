@@ -1,5 +1,6 @@
 package problemsolving.graphs.minimizingPermutations;
 
+
 import groovy.lang.Tuple2;
 
 import java.util.ArrayList;

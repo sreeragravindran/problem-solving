@@ -33,7 +33,7 @@ public class PermutationTests {
 
     @Test
     public void ShouldReturnAllPermutations() {
-        String input = "abcdefghijk";
+        String input = "abcdefghij";
 
         List<String> permutations1  = Approach1.getPermutations(input);
 //        Set<String> permutations2 = Approach2.findPermutations(input);

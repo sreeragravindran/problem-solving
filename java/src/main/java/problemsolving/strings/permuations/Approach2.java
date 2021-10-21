@@ -3,7 +3,14 @@ package problemsolving.strings.permuations;
 import java.time.LocalDateTime;
 import java.time.temporal.ChronoUnit;
 import java.util.*;
-
+/*
+   abcd
+      bacd
+        keep expanding
+        add to set if doesn't exist
+      bcad
+      bcda
+ */
 public class Approach2 {
 
     public static Set<String> findPermutations(String input) {

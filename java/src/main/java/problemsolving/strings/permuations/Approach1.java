@@ -3,7 +3,9 @@ package problemsolving.strings.permuations;
 import java.time.LocalDateTime;
 import java.time.temporal.ChronoUnit;
 import java.util.*;
-
+/*
+    start find permutations from right to left for each character combination
+ */
 public class Approach1 {
 
     // todo: instead of returning in-memory list, use reactive pattern to stream data when available

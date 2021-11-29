@@ -1,4 +1,4 @@
-package interview.zolando;
+package problemsolving.interview;
 
 import java.util.HashSet;
 import java.util.Set;
@@ -16,8 +16,8 @@ public class SmallestPositiveInteger {
             }
         }
 
-        for(int i =1 ; i < max; i++) {
-            if(!set.contains(i)) {
+        for (int i = 1; i < max; i++) {
+            if (!set.contains(i)) {
                 return i;
             }
         }

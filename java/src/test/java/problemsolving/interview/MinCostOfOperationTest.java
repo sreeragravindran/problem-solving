@@ -1,6 +1,5 @@
-package interview.zolando;
+package problemsolving.interview;
 
-import interview.zolando.MinimumCostOfOperation;
 import org.junit.Assert;
 import org.junit.Test;
 
@@ -13,9 +12,9 @@ public class MinCostOfOperationTest {
         int result = minimumCostOfOperation.solution(A);
         Assert.assertEquals(5, result);
 
-        A = new int[]{0, 2, 4, 3, 6, 7, 1, 3, 2, 5, 1};
+        A = new int[]{0, 2, 4, 3, 6, 7, 1, 3, 0, 5, 1};
         result = minimumCostOfOperation.solution(A);
-        Assert.assertEquals(3, result);
+        Assert.assertEquals(1, result);
 
         A = new int[]{0, 3, 4, 3, 6, 0, 1, 3, 2, 5, 1};
         result = minimumCostOfOperation.solution(A);

@@ -1,4 +1,4 @@
-package interview.zolando;
+package problemsolving.interview;
 
 import java.util.PriorityQueue;
 

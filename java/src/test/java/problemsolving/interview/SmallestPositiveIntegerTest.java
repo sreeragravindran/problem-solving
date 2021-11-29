@@ -1,6 +1,5 @@
-package interview.zolando;
+package problemsolving.interview;
 
-import interview.zolando.SmallestPositiveInteger;
 import org.junit.Assert;
 import org.junit.Test;
 

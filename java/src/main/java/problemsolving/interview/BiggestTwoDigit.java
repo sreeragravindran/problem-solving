@@ -1,4 +1,4 @@
-package interview.zolando;
+package problemsolving.interview;
 
 import org.apache.commons.lang3.StringUtils;
 

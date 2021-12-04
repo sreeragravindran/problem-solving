@@ -59,16 +59,14 @@ public class ThreadLocking {
         final ThreadLocking threadLockingTest = new ThreadLocking();
         Set<Thread> allThreads = new HashSet<Thread>();
 
-        Thread t1 = new Thread(new Runnable() {
-            public void run() {
-                try {
-                    threadLockingTest.seatDemocrat();
-                } catch (InterruptedException ie) {
+        Thread t1 = new Thread(() -> {
+            try {
+                threadLockingTest.seatDemocrat();
+            } catch (InterruptedException ie) {
 //                    System.out.println("We have a problem");
 
-                } catch (BrokenBarrierException bbe) {
+            } catch (BrokenBarrierException bbe) {
 //                    System.out.println("We have a problem");
-                }
             }
         }, "t1");
 

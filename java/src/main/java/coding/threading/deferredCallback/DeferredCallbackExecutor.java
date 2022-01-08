@@ -34,14 +34,14 @@ class DeferredCallbackExecutor {
             }
             while (q.size() != 0) {
                 sleepFor = findSleepDuration();
-                if(sleepFor <=0)
+                if (sleepFor <= 0)
                     break;
                 newCallbackArrived.await(sleepFor, TimeUnit.MILLISECONDS);
             }
 
             CallBack cb = q.poll();
             System.out.println(
-                    "Executed at " + System.currentTimeMillis()/1000 + " required at " + cb.executeAt/1000
+                    "Executed at " + System.currentTimeMillis() / 1000 + " required at " + cb.executeAt / 1000
                             + ": message:" + cb.message);
 
             lock.unlock();

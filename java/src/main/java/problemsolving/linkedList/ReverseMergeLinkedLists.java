@@ -34,10 +34,9 @@ public class ReverseMergeLinkedLists {
     }
 
     private static Node<Integer> removeHead(Node<Integer> head) {
-        Node<Integer> oldHead = head;
-        head = oldHead.next;
-        oldHead.next = null;
-        return head;
+        Node newHead = head.next;
+        head.next = null;
+        return newHead;
     }
 
 }

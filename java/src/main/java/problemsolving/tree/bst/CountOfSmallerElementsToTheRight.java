@@ -43,3 +43,4 @@ public class CountOfSmallerElementsToTheRight {
         return output;
     }
 }
+

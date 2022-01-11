@@ -20,15 +20,18 @@ public class GeneratePossibleIPs {
     }
 
     private void explorePaths(String input, List<String> ipParts, List<String> validIpList) {
+        // if the ip-parts makes for a full range and there are no more characters to be processed, its a valid IP
         if(ipParts.size() == 4  && input.length() == 0) {
             // valid Ip
             validIpList.add(String.join(".", ipParts));
             return;
         }
+        // if the max remaining characters required for a full IP cannot consume the remaining characters in the input, no point exploring
         if(input.length() > (4 - ipParts.size()) * 3) {
             ipParts.remove(ipParts.size() - 1);
             return;
         }
+
         // possible path
         char c = input.charAt(0);
         if(c == '0') {

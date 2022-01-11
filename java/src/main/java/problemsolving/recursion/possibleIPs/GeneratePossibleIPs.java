@@ -42,7 +42,7 @@ public class GeneratePossibleIPs {
             for(int i=1; i<=3; i++) {
                 if(input.length() >= i) {
                     String ipPart = input.substring(0, i);
-                    if (Integer.parseInt(ipPart) < 255 ) {
+                    if (Integer.parseInt(ipPart) <= 255 ) {
                         ipParts.add(ipPart);
                         explorePaths(input.substring(i), ipParts, validIpList);
                         ipParts.remove(ipPart);

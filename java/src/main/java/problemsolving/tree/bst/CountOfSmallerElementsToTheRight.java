@@ -33,10 +33,10 @@ public class CountOfSmallerElementsToTheRight {
     public int[] findCount(int[] input) {
         output = new int[input.length];
         Node node;
-        for(int i=input.length -1; i >= 0; i--) {
+        for (int i = input.length - 1; i >= 0; i--) {
             node = addNodeRecursive(root, input[i], 0, i);
             // set root to the parent node created
-            if(i == input.length -1) {
+            if (i == input.length - 1) {
                 root = node;
             }
         }

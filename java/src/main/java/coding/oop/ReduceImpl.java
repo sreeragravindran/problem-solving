@@ -16,17 +16,17 @@ Implement your own version of reduce.
  */
 public class ReduceImpl {
 
-    interface Adder{
+    interface Adder {
         int add(int a, int b);
     }
 
     public int sum(List<Integer> list) {
-        Adder adder = (a,b) -> a + b;
+        Adder adder = (a, b) -> a + b;
         return reduce(list, adder, 0);
     }
 
     private int reduce(List<Integer> list, Adder adder, int initialValue) {
-        for(int i : list) {
+        for (int i : list) {
             initialValue = adder.add(initialValue, i);
         }
         return initialValue;

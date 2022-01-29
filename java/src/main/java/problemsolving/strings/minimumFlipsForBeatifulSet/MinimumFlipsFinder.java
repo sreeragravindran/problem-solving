@@ -5,11 +5,11 @@ package problemsolving.strings.minimumFlipsForBeatifulSet;
     Each coin has 2 side ( H (head) & T(Tail) ) and can be flipped.
     A beautiful set is one in which all Head facing ones are arranged first, followed by Tail facing ones.
     All Heads / Tails is also a beautiful set.
+    Example of beautiful set : HHTTT HTTTT etc.
 
     Consider 0(heads) and 1(tails) for the sake of the program.
 
-    Solution:
-
+Solution:
 For given input : 010001
 find flips required to get to the set of all 1s.
 111111 = 4 flips required to get this valid set
